@@ -54,12 +54,93 @@ p, .fs-md {
 
 .section {
   display: flex;
+  position: relative;
 }
 .section__left {
   width: 70%;
+  position: relative;
+  display: flex;
+}
+.section__bock-blue {
+  position: absolute;
+  width: 54%;
+  height: 85%;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  background-color: #3c91e6;
+}
+.section__block {
+  width: 50%;
+  padding: 4%;
 }
 .section__right {
   width: 30%;
+  position: relative;
+  display: flex;
+}
+.section__title {
+  font-size: 30px;
+}
+.section__text {
+  font-size: 16px;
+  width: 80%;
+}
+.section__img {
+  width: 100%;
+}
+.section__img--map {
+  height: 80%;
+  object-fit: cover;
+  position: absolute;
+  width: 47%;
+  top: 10%;
+  right: 10%;
+}
+.section__img--coffee {
+  height: 280px;
+  object-fit: cover;
+}
+.section__img--grano {
+  width: 25%;
+  height: 58%;
+  object-fit: cover;
+  position: absolute;
+  left: -13%;
+}
+.section__block-yelow {
+  background-color: #eacb31;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.section__block-orange {
+  background-color: #e4572e;
+  bottom: 4%;
+  left: -4%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+.section__icon {
+  z-index: 10;
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  bottom: 22%;
+  left: 22%;
+}
+.section__block-white {
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  position: absolute;
+  width: 54%;
+  height: 23%;
+  z-index: 1;
 }
 
 .btn {

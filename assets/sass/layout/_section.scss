@@ -1,12 +1,108 @@
 // sección inferior
 .section {
   display: flex;
+  position: relative;
+  
 
   &__left {
     width: 70%;
+    position: relative;
+    display: flex;
+  }
+
+  &__bock-blue{
+    position: absolute;
+      width: 54%;
+      height: 85%;
+      z-index: -1;
+      top:0;
+      right: 0;
+      background-color: $primary-blue;
+  }
+  &__block{
+    width: 50%;
+    padding: 4%;
   }
 
   &__right {
     width: 30%;
+    position: relative;
+    display: flex;
   }
+&__title{
+  font-size:$fs-xl ;
+}
+&__text{
+  font-size:$fs-md ;
+  width: 80%;
+}
+
+  &__img{
+    width: 100%;
+
+    &--map{
+      height: 80%;
+      object-fit:cover;
+      position: absolute;
+      width: 47%;
+      top:10%;
+      right: 10%;
+    }
+    &--coffee{
+      height: 280px;
+      object-fit: cover;
+  
+    }
+    &--grano{
+      width: 25%;
+      height: 58%;
+      object-fit: cover;
+      position: absolute;
+      left: -13%;
+
+    }
+  }
+
+  &__block-yelow{
+    background-color: $primary-yellow;
+    bottom:0;
+    left: 0;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+  &__block-orange{
+    background-color:$primary-orange;
+    bottom:4%;
+    left: -4%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+  &__icon{
+    z-index: 10;
+    font-size: 50px;
+    color: $primary-white;
+    position: absolute;
+    bottom:22%;
+    left:22%;
+
+  }
+
+  &__block-white{
+    
+    
+    bottom:0;
+    right:0;
+    background-color:$primary-white;
+    position: absolute;
+      width: 54%;
+      height: 23%;
+      z-index: 1;
+     
+      
+
+  }
+  
 }
