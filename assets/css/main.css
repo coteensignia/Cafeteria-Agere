@@ -23,6 +23,11 @@ h1, .fs-xxxl {
   font-size: 70px;
   font-family: "PT Mono", monospace;
 }
+@media screen and (max-width: 968px) {
+  h1, .fs-xxxl {
+    font-size: 40px;
+  }
+}
 
 h2, .fs-xxl {
   font-size: 40px;
@@ -124,6 +129,12 @@ p, .fs-md {
   width: 138px;
   height: 138px;
 }
+@media screen and (max-width: 968px) {
+  .section__block-yelow {
+    width: 120px;
+    height: 120px;
+  }
+}
 .section__block-orange {
   background-color: #e4572e;
   bottom: 5%;
@@ -132,6 +143,12 @@ p, .fs-md {
   width: 138px;
   height: 138px;
   z-index: 1;
+}
+@media screen and (max-width: 968px) {
+  .section__block-orange {
+    width: 120px;
+    height: 120px;
+  }
 }
 .section__icon {
   display: flex;
@@ -143,7 +160,7 @@ p, .fs-md {
   left: 32%;
 }
 
-.number {
+.data {
   bottom: 0;
   right: 0;
   background-color: #fff;
@@ -157,20 +174,29 @@ p, .fs-md {
   align-items: center;
   justify-content: space-around;
 }
-.number__text {
-  max-width: 20ch;
+@media screen and (max-width: 968px) {
+  .data {
+    width: 80%;
+    height: 40%;
+  }
+}
+.data__group {
+  width: 100px;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.number__num {
+.data__group--2 {
+  width: 200px;
+}
+.data__num {
   font-size: 40px;
   font-family: "PT Mono", monospace;
   position: relative;
   text-align: left;
 }
-.number__txt {
+.data__txt {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   height: 30px;
