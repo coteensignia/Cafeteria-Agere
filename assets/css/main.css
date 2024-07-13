@@ -42,6 +42,7 @@ h4, .fs-lg {
 p, .fs-md {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .nav {
@@ -54,16 +55,20 @@ p, .fs-md {
 
 .section {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-shrink: 100%;
   position: relative;
+  width: 100%;
 }
 .section__left {
-  width: 70%;
   position: relative;
-  display: flex;
+  width: 70%;
+  min-width: 300px;
 }
 .section__bock-blue {
   position: absolute;
-  width: 54%;
+  width: 53%;
   height: 85%;
   z-index: -1;
   top: 0;
@@ -77,7 +82,6 @@ p, .fs-md {
 .section__right {
   width: 30%;
   position: relative;
-  display: flex;
 }
 .section__title {
   font-size: 30px;
@@ -89,11 +93,15 @@ p, .fs-md {
 .section__img {
   width: 100%;
 }
+.section__img--person {
+  height: 100%;
+  object-fit: cover;
+}
 .section__img--map {
-  height: 80%;
+  height: 77%;
   object-fit: cover;
   position: absolute;
-  width: 47%;
+  width: 45%;
   top: 10%;
   right: 10%;
 }
@@ -113,34 +121,59 @@ p, .fs-md {
   bottom: 0;
   left: 0;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 138px;
+  height: 138px;
 }
 .section__block-orange {
   background-color: #e4572e;
-  bottom: 4%;
+  bottom: 5%;
   left: -4%;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 138px;
+  height: 138px;
   z-index: 1;
 }
 .section__icon {
+  display: flex;
   z-index: 10;
   font-size: 50px;
   color: #fff;
   position: absolute;
-  bottom: 22%;
-  left: 22%;
+  bottom: 32%;
+  left: 32%;
 }
-.section__block-white {
+
+.number {
   bottom: 0;
   right: 0;
   background-color: #fff;
   position: absolute;
-  width: 54%;
-  height: 23%;
+  width: 53%;
+  height: 30%;
+  padding: 2px 10px;
   z-index: 1;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: space-around;
+}
+.number__text {
+  max-width: 20ch;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.number__num {
+  font-size: 40px;
+  font-family: "PT Mono", monospace;
+  position: relative;
+  text-align: left;
+}
+.number__txt {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  height: 30px;
 }
 
 .btn {

@@ -6,6 +6,7 @@
 h1, .fs-xxxl {
   font-size: $fs-xxxl;
   font-family: $pt-mono;
+  
 }
 
 h2, .fs-xxl {
@@ -26,4 +27,5 @@ h4, .fs-lg {
 p, .fs-md {
   font-size: $fs-md;
   font-family: $roboto;
+  font-weight: 300;
 }
