@@ -90,6 +90,7 @@
   }
   &__icon {
     display: flex;
+
     z-index: 10;
     font-size: 50px;
     color: $primary-white;
@@ -125,6 +126,7 @@
     font-size: $fs-xxl;
     font-family: $pt-mono;
     position: relative;
+
     text-align: left;
   }
   &__txt {
