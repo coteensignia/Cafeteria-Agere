@@ -160,6 +160,32 @@ p, .fs-md {
   left: 32%;
 }
 
+.btn {
+  font-family: "PT Mono", monospace;
+  text-align: center;
+  padding: 0.5rem;
+  min-width: 9rem;
+  max-width: 100%;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 4rem;
+}
+
+.text-block {
+  padding-inline: 2rem;
+}
+
 .data {
   bottom: 0;
   right: 0;
@@ -200,32 +226,6 @@ p, .fs-md {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   height: 30px;
-}
-
-.btn {
-  font-family: "PT Mono", monospace;
-  text-align: center;
-  padding: 0.5rem;
-  min-width: 9rem;
-  max-width: 100%;
-}
-.btn:hover {
-  cursor: pointer;
-}
-
-.nav__list {
-  display: flex;
-  list-style: none;
-  align-items: center;
-  gap: 1rem;
-}
-
-.logo {
-  height: 4rem;
-}
-
-.text-block {
-  padding-inline: 2rem;
 }
 
 .btn--primary {

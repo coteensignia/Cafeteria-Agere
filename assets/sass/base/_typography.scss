@@ -6,7 +6,7 @@
 h1, .fs-xxxl {
   font-size: $fs-xxxl;
   font-family: $pt-mono;
-  @media screen and (max-width: 968px) {
+  @media screen and (max-width: $screen-media) {
     font-size: $fs-xxl;
    }
   
